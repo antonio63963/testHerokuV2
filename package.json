@@ -6,8 +6,9 @@
     "node": "16.x"
   },
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "start": "node ./bin/www",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "axios": "^0.24.0",
